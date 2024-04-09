@@ -4,23 +4,23 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        Scanner scanner = new Scanner(System.in);
+        Scanner intScan = new Scanner(System.in);
+        Scanner strScan = new Scanner(System.in);
 
         System.out.println("Введите имя первого пользователя");
-        String firstName = in.nextLine();
+        String firstName = strScan.nextLine();
 
         System.out.println("Введите возраст первого пользователя");
-        Integer firstAge = scanner.nextInt();
+        Integer firstAge = intScan.nextInt();
 
         User firstPerson = new User(firstName,firstAge);
 
 
         System.out.println("Введите имя второго пользователя");
-        String secondName = in.nextLine();
+        String secondName = strScan.nextLine();
 
         System.out.println("Введите возраст второго пользователя");
-        Integer secondAge = scanner.nextInt();
+        Integer secondAge = intScan.nextInt();
 
         User secondPerson = new User(secondName,secondAge);
 
